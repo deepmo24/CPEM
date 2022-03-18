@@ -7,7 +7,7 @@ This repository contains the code and supplementary material for our AAAI paper:
 <!-- <p align="center"><font size="5" color="black"><b>The Framework of CPEM</b></p> -->
 
 
-|![ICON+SCANimate+AIST++](assets/demo.gif)|
+|![facial motion retargeting](assets/demo.gif)|
 |:--:|
 |*A demo showing facial motion retargeting results of our CPEM*|
 
@@ -140,6 +140,6 @@ We train our model with three datasets [VoxCeleb2](https://www.robots.ox.ac.uk/~
 
 ## Citation
 
-If this work is useful for your research, please cite our paper.
+If this work is useful for your research, please star our repo and cite our paper.
 
     TODO
