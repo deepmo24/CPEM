@@ -106,9 +106,9 @@ We train our model with three datasets [VoxCeleb2](https://www.robots.ox.ac.uk/~
         ├── face_mask
         │   └── <person_id>/<video_clips>/<images>
         ├── landmarks
-        │   └── <person_id>/<video_clips>/<images>
+        │   └── <person_id>/<video_clips>/<landmarks>
         ├── landmarks2d
-        │   └── <person_id>/<video_clips>/<images>
+        │   └── <person_id>/<video_clips>/<landmarks>
         └── front_face_flag.csv
 
     * `data` folder contains the raw images.
