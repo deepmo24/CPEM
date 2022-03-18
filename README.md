@@ -14,7 +14,7 @@ This repository contains the code and supplementary material for our AAAI paper:
 
 ## Paper
 [Towards Accurate Facial Motion Retargeting with Identity-consistent and Expression-exclusive Constraints](./assets/paper.pdf) \
- [[Supplementary material](./assets/supplementary.pdf)]
+ [[Supplementary material](./assets/supplementary.pdf)] \
 Langyuan Mo, Haokun Li, Chaoyang Zou, Yubing Zhang, Ming Yang, Yihong Yang, Mingkui Tan \
 Proceedings of the AAAI Conference on Artificial Intelligence(AAAI), 2022
 
