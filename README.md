@@ -1,10 +1,9 @@
 # CPEM: Consistent Parameter Estimation Model
 
-This repository contains the code and supplementary material for our AAAI paper:  "Towards Accurate Facial Motion Retargeting with Identity-consistent and Expression-exclusive Constraints".
+This repository contains the code and supplementary material for our AAAI paper:  "Towards Accurate Facial Motion Retargeting with Identity-Consistent and Expression-Exclusive Constraints".
 
 
 <p align="center"><img width="95%" src="assets/framework.png" /></p>
-<!-- <p align="center"><font size="5" color="black"><b>The Framework of CPEM</b></p> -->
 
 
 |![facial motion retargeting](assets/demo.gif)|
@@ -13,7 +12,7 @@ This repository contains the code and supplementary material for our AAAI paper:
 
 
 ## Paper
-[Towards Accurate Facial Motion Retargeting with Identity-consistent and Expression-exclusive Constraints](./assets/paper.pdf) \
+[Towards Accurate Facial Motion Retargeting with Identity-Consistent and Expression-Exclusive Constraints](./assets/paper.pdf) \
  [[Supplementary material](./assets/supplementary.pdf)] \
 Langyuan Mo, Haokun Li, Chaoyang Zou, Yubing Zhang, Ming Yang, Yihong Yang, Mingkui Tan \
 Proceedings of the AAAI Conference on Artificial Intelligence(AAAI), 2022
@@ -142,4 +141,4 @@ We train our model with three datasets [VoxCeleb2](https://www.robots.ox.ac.uk/~
 
 If this work is useful for your research, please star our repo and cite our paper.
 
-    TODO
+    coming soon

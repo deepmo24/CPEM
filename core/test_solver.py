@@ -67,7 +67,7 @@ class TestSolver(object):
                 assert False, 'Checkpoint flie not exist!'
 
 
-    def infer_from_image_paths(self, video_path, face_detector, save_path=None):
+    def infer_from_image_paths(self, video_path, face_detector):
 
         if os.path.isdir(video_path):
             frame_paths = glob.glob(os.path.join(video_path, '*.jpg')) + glob.glob(os.path.join(video_path, '*.png'))
@@ -78,8 +78,10 @@ class TestSolver(object):
             frame_paths = [video_path]
 
 
-        if save_path is None:
-            save_path = self.opts.save_path + '_model{}'.format(self.opts.test_iter)
+        if self.opts.save_path is None:
+            save_path = os.path.join(self.opts.result_root, 'results_{}'.format(self.opts.test_iter))
+        else:
+            save_path = self.opts.save_path
         if not os.path.exists(save_path):
             os.makedirs(save_path)
 
@@ -208,10 +210,11 @@ class TestSolver(object):
             np.savetxt(os.path.join(save_path, coeff_angle_name), coeff_angle_array)
 
 
-    def render_shape(self, image_path, face_detector, save_path=None):
-        if save_path is None:
-            save_path = self.opts.save_path + '_model{}'.format(self.opts.test_iter)
-
+    def render_shape(self, image_path, face_detector):
+        if self.opts.save_path is None:
+            save_path = os.path.join(self.opts.result_root, 'results_{}'.format(self.opts.test_iter))
+        else:
+            save_path = self.opts.save_path
         if not os.path.exists(save_path):
             os.makedirs(save_path)
 
@@ -271,18 +274,17 @@ class TestSolver(object):
                 cv2.imwrite(os.path.join(save_path, overlay_name), overlay_image)
 
 
-    def run_facial_motion_retargeting(self, src_coeff_path, target_img_path, face_detector, save_path=None):
+    def run_facial_motion_retargeting(self, src_coeff_path, target_img_path, face_detector):
         '''
         src_coeff_path: source 3DMM parameter path or dirs with *.mat format
         target_img_path: retarget object
         '''
-
-        if save_path is None:
-            save_path = self.opts.save_path + '_model{}'.format(self.opts.test_iter)
-
+        if self.opts.save_path is None:
+            save_path = os.path.join(self.opts.result_root, 'results_{}'.format(self.opts.test_iter))
+        else:
+            save_path = self.opts.save_path
         if not os.path.exists(save_path):
             os.makedirs(save_path)
-
 
         self.network.eval()
         with torch.no_grad():
