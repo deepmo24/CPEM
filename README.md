@@ -135,10 +135,19 @@ We train our model with three datasets [VoxCeleb2](https://www.robots.ox.ac.uk/~
             --feafa_root <path-to-feafa> \
             --lp_300w_root <path-to-300w_lp>
 
+### Others
+
+* We supply the FACS names of the the expression blendshapes [here](./assets/blendshape_name.md). 
+
 
 
 ## Citation
 
 If this work is useful for your research, please star our repo and cite our paper.
 
-    coming soon
+    @inproceedings{mo2022cpem,
+        title={Towards Accurate Facial Motion Retargeting with Identity-Consistent and Expression-Exclusive Constraints},
+        author={Mo, Langyuan and Li, Haokun and Zou, Chaoyang and Zhang, Yubing and Yang, Ming and Yang, Yihong and Tan, Mingkui}
+        booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence (AAAI)},
+        year={2022}
+    }
